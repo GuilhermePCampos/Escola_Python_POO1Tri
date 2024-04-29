@@ -20,6 +20,7 @@ class Filme:
     def nome(self, nome):
         self.__nome = nome
 
+
 class Serie:
     def __init__(self, nome, ano, temporadas):
         self.__nome = nome.title()
@@ -42,8 +43,9 @@ class Serie:
     def nome(self, nome):
         self.__nome = nome
 
-vingadores = Filme('vingadores - guerra infinita', 2018, 160)
-print(vingadores.nome)
 
+vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 atlanta = Serie('atlanta', 2018, 2)
-print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano}')
+
+print("Filme: " + vingadores.nome)
+print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Likes: {atlanta.dar_likes}')
